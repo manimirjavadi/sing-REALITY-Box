@@ -26,7 +26,7 @@ Also updating the repo's is highly recommended (apt update && apt upgrade)
 
 
 ```bash
-bash <(curl -fsSL https://github.com/deathline94/sing-REALITY-Box/raw/main/sing-REALITY-box.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/manimirjavadi/sing-REALITY-Box/main/sing-REALITY-box.sh)
 
 ```
 
