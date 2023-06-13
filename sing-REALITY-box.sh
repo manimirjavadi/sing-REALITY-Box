@@ -250,12 +250,19 @@ jq -n --arg listen_port "$listen_port" --arg server_name "$server_name" --arg pr
   ],
   "outbounds": [
     {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
+      "type": "wireguard",
+      "tag": "wireguard-out",
+      "server": "engage.cloudflareclient.com",
+      "server_port": 2408,
+      "system_interface": false,
+      "interface_name": "wg0",
+      "local_address": ["172.16.0.2/32"],
+      "private_key": "KE4RJdaDGYe/JTvYmIozs3FV6IvOwHKt04Ch5h1kwGE=",
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "pre_shared_key": "",
+      "reserved": "QLzN",
+      "workers": 8,
+      "mtu": 1280
     }
   ]
 }' > /root/reality.json
